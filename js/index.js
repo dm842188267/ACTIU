@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2019-03-04 13:57:30
 * @Last Modified by:   hp
-* @Last Modified time: 2019-03-20 17:37:34
+* @Last Modified time: 2019-03-20 19:09:11
 */
 // $('.nav li').hover(function(){
 // 	$('.nav-menu').show(200)
@@ -137,7 +137,7 @@ $(window).resize(function(){
 $('.sidenav-btn').click(function(e){
 	e.preventDefault()
 	$('.wrap-bg').show()
-	$('.sml-wrap').addClass('nav-left')
+	$('.sml-wrap').addClass('nav-left-w')
 	setTimeout(function(){
 		$('.sn-btn1').addClass('deg40');
 		$('.sn-btn2').addClass('opc');
@@ -146,7 +146,7 @@ $('.sidenav-btn').click(function(e){
 })
 $('.wrap-bg').click(function(){
 	$('.wrap-bg').hide()
-	$('.sml-wrap').removeClass('nav-left')
+	$('.sml-wrap').removeClass('nav-left-w')
 	setTimeout(function(){
 		$('.sn-btn1').removeClass('deg40');
 		$('.sn-btn2').removeClass('opc');

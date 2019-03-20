@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2019-03-05 15:20:44
 * @Last Modified by:   hp
-* @Last Modified time: 2019-03-20 17:43:39
+* @Last Modified time: 2019-03-20 19:08:54
 */
 *{	
 	margin: 0;
@@ -13,6 +13,7 @@ body{
 	font-size: 14px;
     line-height: 1.42857;
     font-family: UniversLT-CondensedLight,Arial,sans-serif;
+    overflow:hidden;
 }
 header{
 	height: 80px;
@@ -874,7 +875,9 @@ a:hover{
 .side-nav{
 	overflow:hidden;
 	height: 100%;
-	width: 440px;
+	width: 80%;
+    min-width: 140px;
+    max-width: 440px;
 	background:#fff;
 	position:fixed;
 	top:0;
@@ -959,7 +962,10 @@ a:hover{
 	top:-8px;
 }
 .nav-left{
-	transform:translateX(440px);
+	transform: translateX(440px);
+}
+.nav-left-w{
+	transform: translateX(440px);
 }
 .nav-left1{
 	transform:translateX(-30%);
@@ -1436,6 +1442,12 @@ a:hover{
 	}
 	.sml-prev,.sml-next{
 		display:none;
+	}
+}
+@media(max-width:500px){
+	.nav-left-w{
+		transform: translateX(80%);
+
 	}
 }
 @media(max-width:540px){
