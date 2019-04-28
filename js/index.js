@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2019-03-04 13:57:30
 * @Last Modified by:   hp
-* @Last Modified time: 2019-03-20 19:09:11
+* @Last Modified time: 2019-03-20 19:33:38
 */
 // $('.nav li').hover(function(){
 // 	$('.nav-menu').show(200)
@@ -138,6 +138,7 @@ $('.sidenav-btn').click(function(e){
 	e.preventDefault()
 	$('.wrap-bg').show()
 	$('.sml-wrap').addClass('nav-left-w')
+	$('body').addClass('overflow-hide')
 	setTimeout(function(){
 		$('.sn-btn1').addClass('deg40');
 		$('.sn-btn2').addClass('opc');
@@ -147,6 +148,7 @@ $('.sidenav-btn').click(function(e){
 $('.wrap-bg').click(function(){
 	$('.wrap-bg').hide()
 	$('.sml-wrap').removeClass('nav-left-w')
+	$('body').removeClass('overflow-hide')
 	setTimeout(function(){
 		$('.sn-btn1').removeClass('deg40');
 		$('.sn-btn2').removeClass('opc');

@@ -2,7 +2,7 @@
 * @Author: hp
 * @Date:   2019-03-05 15:20:44
 * @Last Modified by:   hp
-* @Last Modified time: 2019-03-20 19:08:54
+* @Last Modified time: 2019-03-20 19:33:17
 */
 *{	
 	margin: 0;
@@ -13,7 +13,6 @@ body{
 	font-size: 14px;
     line-height: 1.42857;
     font-family: UniversLT-CondensedLight,Arial,sans-serif;
-    overflow:hidden;
 }
 header{
 	height: 80px;
@@ -23,6 +22,9 @@ h3{
 }
 section{
 	background:#fff;
+}
+.overflow-hide{
+	overflow:hidden;
 }
 .clearfix{
 	clear: both;
